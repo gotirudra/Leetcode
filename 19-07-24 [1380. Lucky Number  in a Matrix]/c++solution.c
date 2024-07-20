@@ -1,3 +1,5 @@
+/*    "copy & past only solution function for getting result"  */
+
 #include <iostream>
 #include <vector>
 #include <climits>
