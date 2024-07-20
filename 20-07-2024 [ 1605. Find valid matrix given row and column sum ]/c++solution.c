@@ -1,4 +1,4 @@
-/*    "copy & past only solution function for getting result"  */
+/*    "copy & past only code between lines (//----------//) for getting result"  */
 /*    "use gdb compiler for getting output of whole code"      */
 
 #include <iostream>
