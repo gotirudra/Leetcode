@@ -1,4 +1,4 @@
-
+/*    "copy & past only solution function for getting result"  */
 
 import java.util.ArrayList;
 import java.util.List;
