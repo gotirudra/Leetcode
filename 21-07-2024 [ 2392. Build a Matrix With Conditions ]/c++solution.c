@@ -1,16 +1,3 @@
-/*    "copy & past only code between lines (//----------//) for getting result"  */
-/*    "use online c compiler for getting output of whole code"      */
-
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <unordered_map>
-#include <unordered_set>
-
-using namespace std;
-
-//----------------------------------------------   start   -----------------------------------------------------------------------
-
 class Solution {
 public:
     vector<vector<int>> buildMatrix(int k, vector<vector<int>>& rowConditions, vector<vector<int>>& colConditions) {
@@ -77,28 +64,3 @@ private:
         return order.size() == k ? order : vector<int>();
     }
 };
-
-//---------------------------------------------------   end   -------------------------------------------------------------------
-
-int main() {
-    Solution sol;
-    
-    // Example input
-    int k = 3;
-    vector<vector<int>> rowConditions = {{1, 2}, {3, 2}};
-    vector<vector<int>> colConditions = {{2, 1}, {3, 2}};
-    
-    // Build the matrix based on the conditions
-    vector<vector<int>> result = sol.buildMatrix(k, rowConditions, colConditions);
-    
-    // Print the result matrix
-    cout << "Resulting matrix:" << endl;
-    for (const auto& row : result) {
-        for (int val : row) {
-            cout << val << ' ';
-        }
-        cout << endl;
-    }
-    
-    return 0;
-}
