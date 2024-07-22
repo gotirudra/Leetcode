@@ -1,14 +1,3 @@
-/*    "copy & past only code between lines (//----------//) for getting result"  */
-/*    "use gdb compiler for getting output of whole code"      */
-
-#include <iostream>
-#include <vector>
-#include <algorithm>
-
-using namespace std;
-
-//---------------------------------------------------------------------------------------------------
-
 class Solution {
 public:
     vector<vector<int>> restoreMatrix(vector<int>& rowSum, vector<int>& colSum) {
@@ -31,27 +20,3 @@ public:
         return result;
     }
 };
-
-//------------------------------------------------------------------------------------------------------
-
-int main() {
-    Solution sol;
-
-    // Example test case
-    vector<int> rowSum = {3, 8};
-    vector<int> colSum = {4, 7};
-
-    // Call restoreMatrix using the instance 'sol'
-    vector<vector<int>> result = sol.restoreMatrix(rowSum, colSum);
-
-    // Print the result
-    cout << "Restored matrix:" << endl;
-    for (const auto& row : result) {
-        for (int val : row) {
-            cout << val << " ";
-        }
-        cout << endl;
-    }
-
-    return 0;
-}
