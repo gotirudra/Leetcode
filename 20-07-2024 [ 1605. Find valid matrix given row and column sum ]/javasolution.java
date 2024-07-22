@@ -1,13 +1,6 @@
-/*    "copy & past only code between lines (//----------//) for getting result"  */
-/*    "use gdb compiler for getting output of whole code"      */
-
-import java.util.Arrays;
-
-//-----------------------------------------------------------------------
-                                                                      
-class Solution {                                                      
-    public int[][] restoreMatrix(int[] rowSum, int[] colSum) {          
-        int rowSumSize = rowSum.length;                               
+class Solution {
+    public int[][] restoreMatrix(int[] rowSum, int[] colSum) {
+        int rowSumSize = rowSum.length;
         int colSumSize = colSum.length;
 
         int[][] result = new int[rowSumSize][colSumSize];
@@ -23,26 +16,5 @@ class Solution {
         }
 
         return result;
-    }
-
-//-------------------------------------------------------------------------
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-
-        // Example test case
-        int[] rowSum = {3, 8};
-        int[] colSum = {4, 7};
-
-        int[][] result = sol.restoreMatrix(rowSum, colSum);
-
-        // Print the result
-        System.out.println("Restored matrix:");
-        for (int i = 0; i < result.length; i++) {
-            for (int j = 0; j < result[i].length; j++) {
-                System.out.print(result[i][j] + " ");
-            }
-            System.out.println();
-        }
     }
 }
