@@ -1,13 +1,6 @@
-/*    "copy & past only code between lines (//----------//) for getting result"  */
-/*    "use gdb compiler for getting output of whole code"      */
-
-import java.util.ArrayList;
-import java.util.List;
-
-//---------------------------------------------------------------------------------------------------
-
 class Solution {
-    public List<Integer> luckyNumbers(int[][] matrix) {
+    public List<Integer> luckyNumbers (int[][] matrix) {
+        
         List<Integer> minInRows = new ArrayList<>();
         int[] maxInCols = new int[matrix[0].length];
         
@@ -44,23 +37,4 @@ class Solution {
         
         return luckyNums;
     }
-
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        
-        int[][] matrix = {
-            {3, 7, 8},
-            {9, 11, 13},
-            {15, 16, 17}
-        };
-
-        List<Integer> result = sol.luckyNumbers(matrix);
-
-        System.out.println("Lucky numbers:");
-        for (int num : result) {
-            System.out.print(num + " ");
-        }
-    }
 }
-
-//------------------------------------------------------------------------------------------------------
