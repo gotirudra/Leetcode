@@ -1,12 +1,3 @@
-/*    "copy & past only code between lines (//----------//) for getting result"  */
-/*    "use online java compiler for getting output of whole code"      */
-
-
-import java.util.*;
-
-//----------------------------------------------------------  start  --------------------------------------------------------------------
-
-// Solution class with methods to build the matrix
 class Solution {
     public int[][] buildMatrix(int k, int[][] rowConditions, int[][] colConditions) {
         int[][] result = new int[k][k];
@@ -68,28 +59,5 @@ class Solution {
         }
         
         return index == k ? order : null;
-    }
-}
-
-//--------------------------------------------------------------  end  -------------------------------------------------------------------
-
-// Main class to execute the program
-public class Main {
-    public static void main(String[] args) {
-        Solution sol = new Solution();
-        
-        // Example input
-        int k = 3;
-        int[][] rowConditions = {{1, 2}, {3, 2}};
-        int[][] colConditions = {{2, 1}, {3, 2}};
-        
-        // Build the matrix based on the conditions
-        int[][] result = sol.buildMatrix(k, rowConditions, colConditions);
-        
-        // Print the result matrix
-        System.out.println("Resulting matrix:");
-        for (int[] row : result) {
-            System.out.println(Arrays.toString(row));
-        }
     }
 }
