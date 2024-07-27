@@ -47,31 +47,4 @@ class Solution {
         return totalCost;
     }
 
-    public static void main(String[] args) {
-        Solution solution = new Solution();
-
-        // Example 1
-        String source1 = "abcd";
-        String target1 = "acbe";
-        char[] original1 = {'a', 'b', 'c', 'c', 'e', 'd'};
-        char[] changed1 = {'b', 'c', 'b', 'e', 'b', 'e'};
-        int[] cost1 = {2, 5, 5, 1, 2, 20};
-        System.out.println(solution.minimumCost(source1, target1, original1, changed1, cost1)); // Output: 28
-
-        // Example 2
-        String source2 = "aaaa";
-        String target2 = "bbbb";
-        char[] original2 = {'a', 'c'};
-        char[] changed2 = {'c', 'b'};
-        int[] cost2 = {1, 2};
-        System.out.println(solution.minimumCost(source2, target2, original2, changed2, cost2)); // Output: 12
-
-        // Example 3
-        String source3 = "abcd";
-        String target3 = "abce";
-        char[] original3 = {'a'};
-        char[] changed3 = {'e'};
-        int[] cost3 = {10000};
-        System.out.println(solution.minimumCost(source3, target3, original3, changed3, cost3)); // Output: -1
-    }
 }
